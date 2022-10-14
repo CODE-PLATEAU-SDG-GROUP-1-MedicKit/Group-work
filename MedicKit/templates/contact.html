@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- contact Section -->
+<section id="contact" class="contact py">
+    <div class="container grid">
+        <div class="contact-left">
+            
+        </div>
+        <div class="contact-right text-white text-center bg-blue">
+            <div class="contact-head">
+                <h3 class="lead">Contact Us</h3>
+                <p class="text text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, odio?</p>
+            </div>
+            <form action="">
+                <div class="form-element">
+                    <input type="text" class="form-control" placeholder="Your name...">
+                </div>
+                <div class="form-element">
+                    <input type="email" class="form-control" placeholder="Your email...">
+                </div>
+                <div class="form-element">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Your message..." class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-white btn-submit">
+                    <i class="fas fa-arrow-right"></i>Send Message
+                </button>
+            </form>
+        </div>
+        
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="cols-holder">
+      <div class="first-col">
+        <div class="first-row">
+            <div class="brand-hold">
+                <a href="{{ url_for('home') }}" class="navbar-brand">
+                    <img src="../static/imgs/brand-logo.jpeg" alt="">
+                </a>
+                <h1>Medi<span style="color: #fff;">Care</span> </h1>
+            </div>
+        </div>
+        <div  class="second-row">
+          <div class="second-row-img"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
+            incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+        <div class="third-row">
+          <div class="third-row-img"></div>
+          <p>+1-543-123-4567</p>
+        </div>
+        <div class="fourth-row">
+          <div class="fourth-row-img"></div>
+          <p>example@huddle.com</p>
+        </div>
+      </div>  
+      <div class="second-col">
+        <div class="flex-it">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="flex-it">
+          <ul>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="third-col">
+          <a href="https://facebook.com" class="iconic"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com" class="iconic"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" class="iconic"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <p class="attribution">
+        <a href="mailto:offiongjoel@gmail.com">JoeyBadass.&copy; Copyright 2022 SDG project. All rights reserved.</a>
+      </p>
+    </div>
+  </footer>
+<!-- end of footer -->
+{% endblock %}

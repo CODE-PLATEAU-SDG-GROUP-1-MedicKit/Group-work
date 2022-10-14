@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!-- Posts section -->
+    <section id="posts" class="posts py">
+        <div class="container">
+            <div class="section-head">
+                <h2>Latest Post</h2>
+            </div>
+            <div class="post-inner grid">
+                <article class="post-item bg-white">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="content">
+                        <h4>Inspiring stories of people and family centered care during a global pandemic</h4>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab quibusdam fuga natus at deserunt repudiandae nihil ipsam debitis recusandae!</p>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit vero laborum nihil unde placeat molestiae!</p>
+                        <div class="info flex">
+                            <small class="text text-sm"><i class="fas fa-clock">September 20, 2022</i></small>
+                            <small class="text text-sm"><i class="fas fa-comment">9 comments</i></small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-item bg-white">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="content">
+                        <h4>Inspiring stories of people and family centered care during a global pandemic</h4>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab quibusdam fuga natus at deserunt repudiandae nihil ipsam debitis recusandae!</p>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit vero laborum nihil unde placeat molestiae!</p>
+                        <div class="info flex">
+                            <small class="text text-sm"><i class="fas fa-clock">September 20, 2022</i></small>
+                            <small class="text text-sm"><i class="fas fa-comment">9 comments</i></small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-item bg-white">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="content">
+                        <h4>Inspiring stories of people and family centered care during a global pandemic</h4>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab quibusdam fuga natus at deserunt repudiandae nihil ipsam debitis recusandae!</p>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit vero laborum nihil unde placeat molestiae!</p>
+                        <div class="info flex">
+                            <small class="text text-sm"><i class="fas fa-clock">September 20, 2022</i></small>
+                            <small class="text text-sm"><i class="fas fa-comment">9 comments</i></small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- end posts -->
+
+    <!-- footer -->
+<footer>
+    <div class="cols-holder">
+      <div class="first-col">
+        <div class="first-row">
+            <div class="brand-hold">
+                <a href="{{ url_for('home') }}" class="navbar-brand">
+                    <img src="../static/imgs/brand-logo.jpeg" alt="">
+                </a>
+                <h1>Medi<span style="color: #fff;">Care</span> </h1>
+            </div>
+        </div>
+        <div  class="second-row">
+          <div class="second-row-img"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur    adipiscing elit, sed do eiusmod tempor <br>
+            incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+        <div class="third-row">
+          <div class="third-row-img"></div>
+          <p>+1-543-123-4567</p>
+        </div>
+        <div class="fourth-row">
+          <div class="fourth-row-img"></div>
+          <p>example@huddle.com</p>
+        </div>
+      </div>  
+      <div class="second-col">
+        <div class="flex-it">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="flex-it">
+          <ul>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="third-col">
+          <a href="https://facebook.com" class="iconic"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com" class="iconic"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" class="iconic"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <p class="attribution">
+        <a href="mailto:offiongjoel@gmail.com">JoeyBadass.&copy; Copyright 2022 SDG project. All rights reserved.</a>
+      </p>
+    </div>
+  </footer>
+<!-- end of footer -->
+{% endblock %}
