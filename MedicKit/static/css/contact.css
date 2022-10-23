@@ -262,6 +262,187 @@ button[class ^= navbar]:hover {
     padding: 0 1.5rem;
 }
 
+/* contact */
+.contact-left {
+    margin-bottom: 6rem;
+    height: 100%;
+    grid-column: 1/2;
+}
+
+.contact-left iframe {
+    width: 50vw;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact-right {
+    padding: 5rem 4rem;
+}
+
+.contact-right form {
+    margin-top: 4rem;
+}
+
+.contact-head h3 {
+    text-align: center;
+    font-size: 3rem;
+    background: url(../imgs/WhatsApp\ Image\ 2022-09-22\ at\ 6.34.23\ AM.jpeg) no-repeat;
+    margin: 0;
+    padding: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 15s linear infinite;
+    -webkit-animation: moveBg 15s linear infinite; 
+}
+
+/* text animation */
+@keyframes moveBg {
+    0% {
+        background-position: 0% 30%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.form-element .form-control {
+    width: 100%;
+    background-color: #3373dd;
+    border: none;
+    outline: 0;
+    padding: 1rem 1.6rem;
+    margin-bottom: 1.6rem;
+    color: var(--light-color);
+}
+
+.form-element .form-control::placeholder {
+    color: var(--light-color);
+}
+
+.btn-submit {
+    margin-top: 4rem;
+    padding: 1rem 1.6rem;
+    border-radius: 20px;
+    color: #0050d5;
+}
+
+.btn-submit i {
+    margin-right: 2rem;
+}
+
+/* footer */
+.footer .container{
+    margin: 0 80px;
+}
+
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer-item {
+    margin-bottom: 6rem;
+}
+
+.footer-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-head {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-item .icon {
+    margin: auto;
+    display: flex;
+    justify-content: safe;
+    text-align: center;
+}
+
+.footer-item .icon img {
+    border-radius: 50%;
+    width: 40px;
+    margin: 0 15px 0 0;
+}
+.footer-item .icon h3 {
+    font-size: 2.5rem;
+    margin-top: .1rem;
+    color: var(--dark-gray);
+}
+
+.footer-item .icon h3 span {
+    color: var(--frost-blue-color);
+}
+
+.footer-item .text {
+    padding: 3rem 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.footer-item address {
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.footer-item .tags-list {
+    flex-wrap: wrap;
+}
+
+.footer-item .tags-list li {
+    margin: .5rem 1rem;
+    padding: .5rem 1rem;
+    background-color: rgb(58, 58, 58);
+    border-radius: .4rem;
+}
+
+.footer-item a {
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.footer-item a:hover {
+    color: var(--dark-gray);
+}
+
+.footer-item:last-child .text {
+    padding-top: 0;
+}
+
+.footer-item .appointment-info li {
+    margin: 1rem;
+}
+
+.footer-item .appointment-info li span {
+    margin-left: 1rem;
+}
+
+.footer-links {
+    border-top: 2px solid var(--dark-gray);
+}
+
+.footer-links li {
+    margin: 0 2.4rem;
+    font-size: 2rem;
+}
+
+.footer-links li a {
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--light-color);
+    transition: var(--transition);
+}
+
+.footer-links li a:hover {
+    background-color: var(--light-color);
+    color: var(--frost-blue-color);
+}
+
 /* media queries */
 @media(max-width:449px){
     .header {
@@ -274,6 +455,12 @@ button[class ^= navbar]:hover {
     }
     .navbar-collapse {
         width: 320px;
+    }
+
+    .footer-item .icon {
+        margin: auto auto auto 20px;
+        display: flex;
+        justify-content: safe;
     }
 }
 
@@ -289,16 +476,50 @@ button[class ^= navbar]:hover {
     .navbar-collapse {
         width: 320px;
     }
+
+    .footer-item .icon {
+        margin: auto auto auto 50px;
+        display: flex;
+        justify-content: safe;
+    }
+}
+
+@media(min-width:680px){
+    .footer-item .icon {
+        margin: auto auto auto 160px;
+        display: flex;
+        justify-content: safe;
+    }
 }
 
 @media(min-width: 768px){
     .services-inner{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer-inner {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6rem;
+    }
+
+    .footer-inner {
+        text-align: left;
+    }
+
+    .footer-item .icon, .footer-item .text {
+        margin-left: 0;
+    }
+
+    .footer-item .tags-list {
+        justify-content: flex-start;
+    }
 }
 
 @media(min-width: 992px){
-    
+    .contact .container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.4rem;
+    }
 }
 
 @media(min-width:1200px){
@@ -387,6 +608,15 @@ button[class ^= navbar]:hover {
 
     .search-control {
         width: 150px;
+    }
+
+    .contact .container {
+        grid-template-columns: auto 514px;
+    }
+
+    .footer-inner {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 6rem;
     }
 }
 

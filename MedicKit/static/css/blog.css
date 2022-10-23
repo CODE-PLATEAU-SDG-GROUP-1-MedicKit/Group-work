@@ -540,7 +540,7 @@ button[class ^= navbar]:hover {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: moveBg 15s linear infinite;
+    animation: moveBg 15s reverse infinite;
     -webkit-animation: moveBg 15s linear infinite;
 }
 
@@ -561,7 +561,7 @@ button[class ^= navbar]:hover {
     margin-bottom: 6rem;
 }
 
-.post-item:last-child {
+.post-item div:last-child {
     margin-bottom: 0;
 }
 

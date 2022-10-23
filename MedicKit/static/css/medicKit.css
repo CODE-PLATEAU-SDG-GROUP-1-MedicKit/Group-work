@@ -421,7 +421,7 @@ button[class ^= navbar]:hover {
         background: url(../imgs/25.jpg) no-repeat center center fixed;
     }
 
-    .slide-content {
+    /* .slide-content {
         background: var(--light-color);
         display: flex;
         flex-direction: column;
@@ -437,7 +437,7 @@ button[class ^= navbar]:hover {
     .slide-content span {
         font-size: 6rem;
         color: #000;
-    }
+    } */
     
     /* Slideshow End */
 }
