@@ -10,11 +10,14 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="/css/normalize.css">
     <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/service.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/medicKit.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/doctors.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/blog.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" media="screen and (max-width:400px)" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" type="text/css" href="{{ url_for('static', filename='css/responsive2.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>    
 </head>
 <body>
@@ -43,10 +46,10 @@
                             <a href="{{ url_for('about') }}" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url_for('doctors') }}" class="nav-link">Service</a>
+                            <a href="{{ url_for('service') }}" class="nav-link">Service</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Doctors</a>
+                            <a href="{{ url_for('doctors') }}" class="nav-link">Doctors</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Department</a>

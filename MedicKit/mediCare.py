@@ -8,10 +8,13 @@ def home():
     return render_template('medicKit.html')
 
 
+@app.route("/service")
+def service():
+    return render_template('service.html')
+
 @app.route("/about")
 def about():
     return render_template('about.html')
-
 
 @app.route("/doctors")
 def doctors():
